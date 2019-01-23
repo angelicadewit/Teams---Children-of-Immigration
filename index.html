@@ -21,6 +21,7 @@
 				start-movement=".15"
 				end-movement=".7"
 				start-position-x=".5"
+				start-position-y=".9"
 			>
 				<p>When he landed in Michigan in late May, all the weary little boy carried was a trash bag stuffed with dirty clothes from his dayslong trek across Mexico, and two small pieces of paper — one a stick-figure drawing of his family from Honduras, the other a sketch of his father, who had been arrested and led away after they arrived at the United States border in El Paso.</p>
 			</div>
@@ -101,7 +102,11 @@
 
 		<!-- <script src="dist/js/rellax.min.js"></script> -->
 		<script src="dist/js/smooth-parallax.min.js"></script>
-		<script src="dist/js/main.js"></script>
-
+		<!-- <script src="dist/js/main.js"></script> -->
+		<script type="text/javascript">
+			window.addEventListener("load", function () {
+				SmoothParallax.init();
+			});
+		</script>
 	</body>
 </html>
