@@ -24,15 +24,19 @@ TABLE OF CONTENTS:
 }
 
 body {
-	background: #2e2e2e;
-	color: white;
+	background: white url(../img/dark-backgroundopti.png);
 }
 
 /* 2. Content ================================= */
 
 section{
-	margin: 50px;
 	height: 100vh;
+}
+
+.header{
+	background: url(../img/jose-in-words.png) no-repeat;
+	background-size: contain;
+	background-position-x: calc(50%);
 }
 
 p{
