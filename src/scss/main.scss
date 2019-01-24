@@ -24,7 +24,8 @@ TABLE OF CONTENTS:
 }
 
 body {
-	background: white url(../img/dark-backgroundopti.png);
+	background: white url(../img/joses_story.png);
+	color: white;
 }
 
 /* 2. Content ================================= */
@@ -37,9 +38,15 @@ section{
 	background: url(../img/jose-in-words.png) no-repeat;
 	background-size: contain;
 	background-position-x: calc(50%);
+	position: relative;
+	z-index: 40;
 }
 
 p{
 	font-family: sans-serif;
 	font-size: 20px;
+}
+
+.rellax{
+	width: 400px;
 }
