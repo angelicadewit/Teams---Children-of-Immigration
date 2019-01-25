@@ -30,23 +30,81 @@ body {
 
 /* 2. Content ================================= */
 
-section{
-	height: 100vh;
-}
 
-.header{
+header {
+	height: 100vh; 
+	min-height: 500px;
+	max-height: 1200px;
+
 	background: url(../img/jose-in-words.png) no-repeat;
 	background-size: contain;
 	background-position-x: calc(50%);
 	position: relative;
-	z-index: 40;
 }
+
+section{
+	// how to do full screen experiences safely
+	// height: 100vh; 
+	// min-height: 500px;
+	// max-height: 1200px;
+
+	height: auto;
+	padding: 30px 0;
+}
+
+.paragraph-text{
+	position: relative;
+	z-index: 5;
+}
+
 
 p{
-	font-family: sans-serif;
-	font-size: 20px;
+	font-family: "adobe-garamond-pro";
+	font-size: 24px;
+	line-height: 150%;
+	width: 100%;
+	max-width: 900px;
+	margin: 50px auto;
+	text-shadow: 0px 0px 50px #000000;
+	position: relative;
 }
 
-.rellax{
-	width: 400px;
+.empty{
+	height: 100px;
+}
+
+// .first-part{
+// 	top: 50%;
+// }
+
+.airplane-stuff{
+	position: relative;
+	display: flex;
+	// margin-top: -200px; 
+}
+
+.airplane-dust{
+	background: url(../img/airplane-dust.png) no-repeat;
+	background-size: cover;
+	position: relative;
+	width: 600px;
+	height: 100px;
+	background-blend-mode: multiply;
+}
+
+.airplane{
+	background: url(../img/airplane.png) no-repeat;
+	background-size: contain;
+	position: relative;
+	width: 500px;
+	height: 300px;
+}
+
+.michigan{
+	background: url(../img/michigan.png) no-repeat;
+	background-size: contain;
+	position: relative;
+	width: 500px;
+	height: 500px;
+	left: 50%;
 }
