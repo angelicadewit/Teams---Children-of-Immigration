@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
 var rellax = new Rellax('.rellax', {
-    speed: 5,
+    speed: 2,
     center: true,
     wrapper: null,
     round: true,
@@ -9,7 +9,7 @@ var rellax = new Rellax('.rellax', {
     horizontal: false
 });
 
-// window.addEventListener("load", function () {
-//     SmoothParallax.init();
-// });
+TweenMax.to(".airplane-stuff", 6, { x: 1000 });
+TweenMax.to(".airplane-dust", 2, { opacity: 1, delay: 1.5 });
+TweenMax.to(".michigan", 1, { opacity: 1, delay: 4 });
 //# sourceMappingURL=main.js.map

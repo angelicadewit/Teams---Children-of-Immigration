@@ -110,12 +110,14 @@ p {
 }
 
 .empty {
-	height: 100px;
+	height: 300px;
 }
 
 .airplane-stuff {
 	position: relative;
 	display: flex;
+	margin-top: -200px;
+	left: -1000px;
 }
 
 .airplane-dust {
@@ -124,7 +126,7 @@ p {
 	position: relative;
 	width: 600px;
 	height: 100px;
-	background-blend-mode: multiply;
+	opacity: 0;
 }
 
 .airplane {
@@ -142,6 +144,8 @@ p {
 	width: 500px;
 	height: 500px;
 	left: 50%;
+	margin-top: -200px;
+	opacity: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
