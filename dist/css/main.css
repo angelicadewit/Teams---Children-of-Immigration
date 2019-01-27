@@ -143,9 +143,14 @@ p {
 	position: relative;
 	width: 500px;
 	height: 500px;
-	left: 50%;
+	left: calc(100% - 600px);
 	margin-top: -200px;
 	opacity: 0;
+}
+
+.second-part {
+	background: url(../img/joses_story.png), url(../img/light-backgroundopti.png) no-repeat;
+	background-blend-mode: darken;
 }
 
 /*# sourceMappingURL=main.css.map */
