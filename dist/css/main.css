@@ -109,18 +109,35 @@ p {
 	position: relative;
 }
 
+.first-scene {
+	width: 500px;
+	margin-left: 13%;
+}
+
+.second-scene {
+	width: 520px;
+	margin-left: 55%;
+}
+
+.second-scene:first-child {
+	margin-bottom: 0px;
+}
+
 .empty {
 	height: 300px;
+}
+
+.empty.empty-show {
+	border: 1px solid red;
 }
 
 .airplane-stuff {
 	position: relative;
 	display: flex;
 	margin-top: -200px;
-	left: -1000px;
 }
 
-.airplane-dust {
+.airplane-stuff .airplane-dust {
 	background: url(../img/airplane-dust.png) no-repeat;
 	background-size: cover;
 	position: relative;
@@ -129,7 +146,8 @@ p {
 	opacity: 0;
 }
 
-.airplane {
+.airplane-stuff .airplane {
+	left: -1000px;
 	background: url(../img/airplane.png) no-repeat;
 	background-size: contain;
 	position: relative;
@@ -143,52 +161,36 @@ p {
 	position: relative;
 	width: 500px;
 	height: 500px;
-	left: calc(100% - 600px);
-	margin-top: -200px;
+	left: calc(100% - 750px);
+	margin-top: -400px;
 	opacity: 0;
 }
 
-.jose {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: -300px;
-}
-
-.jose .jose-trashbag {
-	background: url(../img/jose-trashbag.png) no-repeat;
+.jose-new {
+	background: url(../img/complete-jose.png) no-repeat;
 	background-size: contain;
 	position: relative;
-	width: 150px;
-	height: 210px;
-}
-
-.jose .jose-boy {
-	background: url(../img/jose-boy.png) no-repeat;
-	background-size: contain;
-	position: relative;
-	width: 300px;
-	height: 574px;
-}
-
-.jose .jose-drawing {
-	background: url(../img/jose-drawing.png) no-repeat;
-	background-size: contain;
-	position: relative;
-	width: 152px;
-	height: 150px;
+	width: 600px;
+	height: 620px;
+	margin-left: 15%;
+	margin-top: -600px;
 }
 
 .quote {
-	background: url(../img/big-quote.png) no-repeat;
-	background-size: cover;
+	background: url(../img/revisedbigquote.png) no-repeat;
+	background-size: contain;
 	position: relative;
-	height: 100vh;
-	min-height: 500px;
-	max-height: 1200px;
-	width: 100%;
-	max-width: 900px;
-	margin: -200px auto;
+	width: 750px;
+	height: 175px;
+	left: 45%;
+	transition: 0.2s;
+	margin-top: -200px;
+	z-index: 10;
+}
+
+.quote:hover {
+	background: url(../img/revisedbigquoteeng.png) no-repeat;
+	background-size: contain;
 }
 
 /*# sourceMappingURL=main.css.map */
