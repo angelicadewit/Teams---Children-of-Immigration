@@ -105,7 +105,7 @@ p {
 	width: 100%;
 	max-width: 900px;
 	margin: 50px auto;
-	text-shadow: 0px 0px 50px #000000;
+	text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000;
 	position: relative;
 }
 
@@ -148,9 +148,47 @@ p {
 	opacity: 0;
 }
 
-.second-part {
-	background: url(../img/joses_story.png), url(../img/light-backgroundopti.png) no-repeat;
-	background-blend-mode: darken;
+.jose {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -300px;
+}
+
+.jose .jose-trashbag {
+	background: url(../img/jose-trashbag.png) no-repeat;
+	background-size: contain;
+	position: relative;
+	width: 150px;
+	height: 210px;
+}
+
+.jose .jose-boy {
+	background: url(../img/jose-boy.png) no-repeat;
+	background-size: contain;
+	position: relative;
+	width: 300px;
+	height: 574px;
+}
+
+.jose .jose-drawing {
+	background: url(../img/jose-drawing.png) no-repeat;
+	background-size: contain;
+	position: relative;
+	width: 152px;
+	height: 150px;
+}
+
+.quote {
+	background: url(../img/big-quote.png) no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+	min-height: 500px;
+	max-height: 1200px;
+	width: 100%;
+	max-width: 900px;
+	margin: -200px auto;
 }
 
 /*# sourceMappingURL=main.css.map */
