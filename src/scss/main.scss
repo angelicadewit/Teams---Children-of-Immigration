@@ -121,9 +121,6 @@ p{
 	}
 }
 
-// .first-part{
-// 	top: 50%;
-// }
 
 .airplane-stuff{
 	position: relative;
@@ -212,17 +209,37 @@ p{
 	background: url(../img/revisedbigquote.png) no-repeat;
 	background-size: contain;
 	position: relative;
-	width: 750px;
-	height: 175px;
-	left: 45%;
 	transition: 0.2s;
-	margin-top: -200px;
 	z-index: 10;
+
 	
 	&:hover{
 		background: url(../img/english-when-will-i-see-my-dad.png) no-repeat;
 		background-size: contain;
 	}
+
+	&.mobile{
+		width: 100vw;
+		height: 25vw;
+
+		@include desktop{
+			display: none;
+		}
+
+	}
+
+	&.desktop{
+		display: none;
+
+		@include desktop{
+			display: block;
+			left: 20%;
+			width: 750px;
+			height: 175px;
+			margin-top: -300px;
+		}
+	}
+
 }
 
 .clock{
