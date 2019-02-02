@@ -101,13 +101,12 @@ p{
 .second-scene{
 
 	@include tablet{
-		width: 520px;
-		margin-left: 50%;
+		
 	}
 
 	@include desktop{
-		margin-left: 55%;
-	
+		width: 500px;
+		margin-left: 45%;
 	}
 	&:first-child{
 		margin-bottom: 0px;
@@ -129,15 +128,23 @@ p{
 .airplane-stuff{
 	position: relative;
 	display: flex;
-	margin-top: -200px; 
+	margin-top: -100px; 
 	
 	.airplane-dust{
 		background: url(../img/airplane-dust.png) no-repeat;
 		background-size: cover;
 		position: relative;
-		width: 600px;
+		width: 100%;
 		height: 150px;
 		opacity: 0;
+
+		@include tablet{
+			width: 300px;
+		}
+
+		@include desktop{
+			width: 600px;
+		}
 	}
 	
 	.airplane{
@@ -145,12 +152,12 @@ p{
 		background: url(../img/airplane.png) no-repeat;
 		background-size: contain;
 		position: relative;	
-		width: 400px;
-		height: 200px;
+		width: 30vw;
+		height: 30vw;
 
-		@include desktop{
-			width: 500px;
-			height: 300px;
+		@include tablet{
+			width: 20vw;
+			height: 20vw;
 		}
 	}
 }
@@ -164,65 +171,40 @@ p{
 	opacity: 0;
 	width: 50vw;
 	height: 50vw;
-	margin-top: -200px;
+	margin-top: -100px;
 		
 
 	@include tablet{
 		width: 40vw;
 		height: 40vw;
-		margin-top: -400px;
-		left: 65%;
+		margin-top: -300px;
+		left: 55%;
 	}
 	
 	@include desktop{
-		width: 35vw;
-		height: 35vw;
-		margin-top: -500px;
-		left: 55%;
+		width: 30vw;
+		height: 30vw;
+		margin-top: -400px;
 	}
 }
-
-// .jose{
-// 	display: flex;
-// 	justify-content: flex-start;
-// 	align-items: center;
-// 	margin-top: -300px;
-
-// 	.jose-trashbag{
-// 		background: url(../img/jose-trashbag.png) no-repeat;
-// 		background-size: contain;
-// 		position: relative;
-// 		width: 150px;
-// 		height: 210px;
-// 	}
-
-// 	.jose-boy{
-// 		background: url(../img/jose-boy.png) no-repeat;
-// 		background-size: contain;
-// 		position: relative;
-// 		width: 300px;
-// 		height: 574px;
-// 	}
-
-// 	.jose-drawing{
-// 		background: url(../img/jose-drawing.png) no-repeat;
-// 		background-size: contain;
-// 		position: relative;
-// 		width: 152px;
-// 		height: 150px;
-// 	}
-// }
 
 .jose-new{
 	background: url(../img/complete-jose.png) no-repeat;
 	background-size: contain;
 	position: relative;
-	width: 600px;
-	height:620px;
-	margin-top: -600px;
+	width: 60vw;
+	height: 62vw;
+	margin-top: -500px;
+	margin-left: 15%;
 	
 	@include tablet{
-		margin-left: 15%;
+		width: 600px;
+		height: 620px;
+		margin-top: -600px;
+	}
+
+	@include desktop{
+
 	}
 }
 

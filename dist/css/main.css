@@ -123,16 +123,10 @@ p {
 	}
 }
 
-@media only screen and (min-width: 768px) {
-	.second-scene {
-		width: 520px;
-		margin-left: 50%;
-	}
-}
-
 @media only screen and (min-width: 1024px) {
 	.second-scene {
-		margin-left: 55%;
+		width: 500px;
+		margin-left: 45%;
 	}
 }
 
@@ -151,16 +145,28 @@ p {
 .airplane-stuff {
 	position: relative;
 	display: flex;
-	margin-top: -200px;
+	margin-top: -100px;
 }
 
 .airplane-stuff .airplane-dust {
 	background: url(../img/airplane-dust.png) no-repeat;
 	background-size: cover;
 	position: relative;
-	width: 600px;
+	width: 100%;
 	height: 150px;
 	opacity: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	.airplane-stuff .airplane-dust {
+		width: 300px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.airplane-stuff .airplane-dust {
+		width: 600px;
+	}
 }
 
 .airplane-stuff .airplane {
@@ -168,14 +174,14 @@ p {
 	background: url(../img/airplane.png) no-repeat;
 	background-size: contain;
 	position: relative;
-	width: 400px;
-	height: 200px;
+	width: 30vw;
+	height: 30vw;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
 	.airplane-stuff .airplane {
-		width: 500px;
-		height: 300px;
+		width: 20vw;
+		height: 20vw;
 	}
 }
 
@@ -187,24 +193,23 @@ p {
 	opacity: 0;
 	width: 50vw;
 	height: 50vw;
-	margin-top: -200px;
+	margin-top: -100px;
 }
 
 @media only screen and (min-width: 768px) {
 	.michigan {
 		width: 40vw;
 		height: 40vw;
-		margin-top: -400px;
-		left: 65%;
+		margin-top: -300px;
+		left: 55%;
 	}
 }
 
 @media only screen and (min-width: 1024px) {
 	.michigan {
-		width: 35vw;
-		height: 35vw;
-		margin-top: -500px;
-		left: 55%;
+		width: 30vw;
+		height: 30vw;
+		margin-top: -400px;
 	}
 }
 
@@ -212,14 +217,17 @@ p {
 	background: url(../img/complete-jose.png) no-repeat;
 	background-size: contain;
 	position: relative;
-	width: 600px;
-	height: 620px;
-	margin-top: -600px;
+	width: 60vw;
+	height: 62vw;
+	margin-top: -500px;
+	margin-left: 15%;
 }
 
 @media only screen and (min-width: 768px) {
 	.jose-new {
-		margin-left: 15%;
+		width: 600px;
+		height: 620px;
+		margin-top: -600px;
 	}
 }
 
