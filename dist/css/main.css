@@ -102,21 +102,38 @@ p {
 	font-family: "adobe-garamond-pro";
 	font-size: 24px;
 	line-height: 150%;
-	width: 100%;
+	width: 90%;
 	max-width: 900px;
-	margin: 50px auto;
+	margin: 10% auto;
 	text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000;
 	position: relative;
 }
 
-.first-scene {
-	width: 500px;
-	margin-left: 13%;
+@media only screen and (min-width: 768px) {
+	p {
+		width: 100%;
+		margin: 50px auto;
+	}
 }
 
-.second-scene {
-	width: 520px;
-	margin-left: 55%;
+@media only screen and (min-width: 768px) {
+	.first-scene {
+		width: 500px;
+		margin-left: 13%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.second-scene {
+		width: 520px;
+		margin-left: 50%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.second-scene {
+		margin-left: 55%;
+	}
 }
 
 .second-scene:first-child {
@@ -142,28 +159,53 @@ p {
 	background-size: cover;
 	position: relative;
 	width: 600px;
-	height: 100px;
+	height: 150px;
 	opacity: 0;
 }
 
 .airplane-stuff .airplane {
-	left: -1000px;
+	left: -500px;
 	background: url(../img/airplane.png) no-repeat;
 	background-size: contain;
 	position: relative;
-	width: 500px;
-	height: 300px;
+	width: 400px;
+	height: 200px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.airplane-stuff .airplane {
+		width: 500px;
+		height: 300px;
+	}
 }
 
 .michigan {
 	background: url(../img/michigan.png) no-repeat;
 	background-size: contain;
 	position: relative;
-	width: 500px;
-	height: 500px;
-	left: calc(100% - 750px);
-	margin-top: -400px;
+	left: 50%;
 	opacity: 0;
+	width: 50vw;
+	height: 50vw;
+	margin-top: -200px;
+}
+
+@media only screen and (min-width: 768px) {
+	.michigan {
+		width: 40vw;
+		height: 40vw;
+		margin-top: -400px;
+		left: 65%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.michigan {
+		width: 35vw;
+		height: 35vw;
+		margin-top: -500px;
+		left: 55%;
+	}
 }
 
 .jose-new {
@@ -172,8 +214,13 @@ p {
 	position: relative;
 	width: 600px;
 	height: 620px;
-	margin-left: 15%;
 	margin-top: -600px;
+}
+
+@media only screen and (min-width: 768px) {
+	.jose-new {
+		margin-left: 15%;
+	}
 }
 
 .quote {
@@ -189,8 +236,27 @@ p {
 }
 
 .quote:hover {
-	background: url(../img/revisedbigquoteeng.png) no-repeat;
+	background: url(../img/english-when-will-i-see-my-dad.png) no-repeat;
 	background-size: contain;
+}
+
+.clock {
+	background: url(../img/clock.png) no-repeat;
+	background-size: contain;
+	width: 600px;
+	height: 600px;
+}
+
+.pixels {
+	background: red;
+	width: 50%;
+	height: 200px;
+}
+
+.proportional {
+	background: blue;
+	width: 50vw;
+	height: 50vw;
 }
 
 /*# sourceMappingURL=main.css.map */
