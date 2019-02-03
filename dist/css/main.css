@@ -272,20 +272,22 @@ p {
 .clock {
 	background: url(../img/clock.png) no-repeat;
 	background-size: contain;
-	width: 600px;
-	height: 600px;
-}
-
-.pixels {
-	background: red;
-	width: 50%;
-	height: 200px;
-}
-
-.proportional {
-	background: blue;
 	width: 50vw;
 	height: 50vw;
+	margin: 0 auto;
+	margin-top: -250px;
+}
+
+.chairs {
+	margin-top: -220px;
+}
+
+.chair {
+	background: url(../img/airport-chairs.png) no-repeat;
+	background-size: contain;
+	width: 50vw;
+	height: 30vw;
+	margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
