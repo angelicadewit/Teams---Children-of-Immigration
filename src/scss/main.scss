@@ -299,6 +299,13 @@ p{
 		margin: 50%;
 		margin-top: -350px;
 	}
+
+	@include desktop{
+		width: 30vw;
+		height: 30vw;
+		margin-left: 66%;
+		margin-top: -650px;
+	}
 }
 
 .sweatpants{
@@ -312,5 +319,10 @@ p{
 	@include tablet{
 		margin: 5%;
 		margin-top: -400px;
+	}
+
+	@include desktop{
+		width: 25vw;
+		height: 40vw;
 	}
 }

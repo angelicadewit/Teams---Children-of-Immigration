@@ -344,6 +344,15 @@ p {
 	}
 }
 
+@media only screen and (min-width: 1024px) {
+	.sweatshirt {
+		width: 30vw;
+		height: 30vw;
+		margin-left: 66%;
+		margin-top: -650px;
+	}
+}
+
 .sweatpants {
 	background: url(../img/sweatpants.png) no-repeat;
 	background-size: contain;
@@ -357,6 +366,13 @@ p {
 	.sweatpants {
 		margin: 5%;
 		margin-top: -400px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.sweatpants {
+		width: 25vw;
+		height: 40vw;
 	}
 }
 
