@@ -101,8 +101,9 @@ p{
 .second-scene{
 
 	@include desktop{
-		width: 500px;
-		margin-left: 45%;
+		width: 50%;
+		margin-left: 50%;
+		max-width: 600px;
 	}
 	&:first-child{
 		margin-bottom: 0px;
@@ -114,6 +115,14 @@ p{
 
 	@include desktop{
 		width:  600px;
+	}
+}
+
+.fifth-scene{
+	
+	@include desktop{
+		width: 500px;
+		margin: 0px 10%;
 	}
 }
 
@@ -199,8 +208,9 @@ p{
 	margin-left: 15%;
 	
 	@include tablet{
-		width: 600px;
-		height: 620px;
+		margin-left: 10%;
+		width: 40vw;
+		height: 42vw;
 		margin-top: -600px;
 	}
 
@@ -346,49 +356,112 @@ p{
 }
 
 .sixth-scene-cluster{
-	display: flex;
-	justify-content: space-around;
-	z-index: 2;
-	position: relative;
+
+	// @include tablet{
+		display: flex;
+		justify-content: space-around;
+		z-index: 2;
+		position: relative;
+	// }
 }
 
 .sixth-scene{
-	width: 10vw;
-	height: 10vw;
+	width: 30vw;
+	height: 30vw;
 
 
 	&.circle{
 		background: url("../img/circle.png") no-repeat;
 		background-size: contain;
+		margin-left: 20%;
+		margin-top: -150px;
+
+		@include tablet{
+			margin-top: -250px;
+		}
+
+		@include desktop{
+			margin-top: -300px;
+		}
 	}
 
 	&.division{
 		background: url(../img/division.png) no-repeat;
 		background-size: contain;
+		margin: 0 auto;
+		margin-top: -100px;
+
+		@include tablet{
+			margin-top: -250px;
+			margin-left: 25%;
+		}
+
+		@include desktop{
+			margin-top: -300px;
+		}
 	}
 
 	&.minus{
 		background: url(../img/minus.png) no-repeat;
 		background-size: contain;
+		margin-left: 60%;
+		margin-top: -150px;
+
+		@include tablet{
+			margin-top: -300px;
+		}
 	}
 
 	&.rectangle{
 		background: url(../img/rectangle.png) no-repeat;
 		background-size: contain;
+		margin-left: 30%;
+		margin-top: -150px;
+
+		@include tablet{
+			margin-top: -300px;
+			margin-left: 45%;
+		}
 	}
 
 	&.triangle{
 		background: url(../img/triangle.png) no-repeat;
 		background-size: contain;
+		margin: 0 auto;
+		margin-top: -150px;
+
+		@include tablet{
+			margin-top: -250px;
+		}
+		
+		@include desktop{
+			margin-top: -300px;
+		}
 	}
 
 	&.x{
 		background: url(../img/x.png) no-repeat;
 		background-size: contain;
+		margin-top: -150px;
+
+		@include tablet{
+			margin-top: -250px;
+		}
+
+		@include desktop{
+			margin-top: -300px;
+		}
 	}
 
 	&.plus{
 		background: url(../img/plus.png) no-repeat;
 		background-size: contain;
+		margin-top: -150px;
+
+		@include tablet{
+			margin-top: -300px;
+		}
 	}
 }
+
+
