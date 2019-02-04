@@ -344,3 +344,51 @@ p{
 		margin-top: -750px;
 	}
 }
+
+.sixth-scene-cluster{
+	display: flex;
+	justify-content: space-around;
+	z-index: 2;
+	position: relative;
+}
+
+.sixth-scene{
+	width: 10vw;
+	height: 10vw;
+
+
+	&.circle{
+		background: url("../img/circle.png") no-repeat;
+		background-size: contain;
+	}
+
+	&.division{
+		background: url(../img/division.png) no-repeat;
+		background-size: contain;
+	}
+
+	&.minus{
+		background: url(../img/minus.png) no-repeat;
+		background-size: contain;
+	}
+
+	&.rectangle{
+		background: url(../img/rectangle.png) no-repeat;
+		background-size: contain;
+	}
+
+	&.triangle{
+		background: url(../img/triangle.png) no-repeat;
+		background-size: contain;
+	}
+
+	&.x{
+		background: url(../img/x.png) no-repeat;
+		background-size: contain;
+	}
+
+	&.plus{
+		background: url(../img/plus.png) no-repeat;
+		background-size: contain;
+	}
+}

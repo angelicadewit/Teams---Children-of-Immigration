@@ -401,4 +401,51 @@ p {
 	}
 }
 
+.sixth-scene-cluster {
+	display: flex;
+	justify-content: space-around;
+	z-index: 2;
+	position: relative;
+}
+
+.sixth-scene {
+	width: 10vw;
+	height: 10vw;
+}
+
+.sixth-scene.circle {
+	background: url("../img/circle.png") no-repeat;
+	background-size: contain;
+}
+
+.sixth-scene.division {
+	background: url(../img/division.png) no-repeat;
+	background-size: contain;
+}
+
+.sixth-scene.minus {
+	background: url(../img/minus.png) no-repeat;
+	background-size: contain;
+}
+
+.sixth-scene.rectangle {
+	background: url(../img/rectangle.png) no-repeat;
+	background-size: contain;
+}
+
+.sixth-scene.triangle {
+	background: url(../img/triangle.png) no-repeat;
+	background-size: contain;
+}
+
+.sixth-scene.x {
+	background: url(../img/x.png) no-repeat;
+	background-size: contain;
+}
+
+.sixth-scene.plus {
+	background: url(../img/plus.png) no-repeat;
+	background-size: contain;
+}
+
 /*# sourceMappingURL=main.css.map */
