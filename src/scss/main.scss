@@ -292,12 +292,11 @@ p{
 	background: url(../img/sweatshirt.png) no-repeat;
 	background-size: contain;
 	width: 50vw;
-	height: 70vw;
+	height: 50vw;
 	margin: 0 auto;
 
 	@include tablet{
-		width: 30vw;
-		height: 30vw;
+		margin: 50%;
 		margin-top: -350px;
 	}
 }
@@ -305,14 +304,13 @@ p{
 .sweatpants{
 	background: url(../img/sweatpants.png) no-repeat;
 	background-size: contain;
-	width: 50vw;
-	height: 70vw;
+	width: 45vw;
+	height: 60vw;
 	margin: 0 auto;
 	margin-top: -550px;
 
 	@include tablet{
-		width: 30vw;
-		height: 30vw;
-		margin-top: -350px;
+		margin: 5%;
+		margin-top: -400px;
 	}
 }
