@@ -85,7 +85,7 @@ p{
 	position: relative;
 
 	@include tablet{
-		width: 100%;
+		width: 90%;
 		margin: 50px auto;
 	}
 }
@@ -100,16 +100,20 @@ p{
 
 .second-scene{
 
-	@include tablet{
-		
-	}
-
 	@include desktop{
 		width: 500px;
 		margin-left: 45%;
 	}
 	&:first-child{
 		margin-bottom: 0px;
+	}
+}
+
+.third-scene{
+	margin: 0 auto;
+
+	@include desktop{
+		width: 400px;
 	}
 }
 
@@ -249,10 +253,25 @@ p{
 	height: 50vw;
 	margin: 0 auto;
 	margin-top: -250px;
+
+	@include tablet{
+		width: 30vw;
+		height: 30vw;
+		margin-top: -350px;
+	}
 }
 
 .chairs{
 	margin-top: -220px;
+
+	@include tablet{
+		margin-top: -250px;
+	}
+
+	@include desktop{
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .chair{
@@ -261,7 +280,12 @@ p{
 	width: 50vw;
 	height: 30vw;
 	margin: 0 auto;
-	// margin-top: -250px;
+	
+	@include desktop{
+		width: 24vw;
+		height: 18vw;
+		margin: 0;
+	}
 }
 
 

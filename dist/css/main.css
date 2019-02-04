@@ -111,7 +111,7 @@ p {
 
 @media only screen and (min-width: 768px) {
 	p {
-		width: 100%;
+		width: 90%;
 		margin: 50px auto;
 	}
 }
@@ -132,6 +132,16 @@ p {
 
 .second-scene:first-child {
 	margin-bottom: 0px;
+}
+
+.third-scene {
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+	.third-scene {
+		width: 400px;
+	}
 }
 
 .empty {
@@ -278,8 +288,29 @@ p {
 	margin-top: -250px;
 }
 
+@media only screen and (min-width: 768px) {
+	.clock {
+		width: 30vw;
+		height: 30vw;
+		margin-top: -350px;
+	}
+}
+
 .chairs {
 	margin-top: -220px;
+}
+
+@media only screen and (min-width: 768px) {
+	.chairs {
+		margin-top: -250px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.chairs {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .chair {
@@ -288,6 +319,14 @@ p {
 	width: 50vw;
 	height: 30vw;
 	margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+	.chair {
+		width: 24vw;
+		height: 18vw;
+		margin: 0;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */
