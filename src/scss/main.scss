@@ -204,9 +204,6 @@ p{
 		margin-top: -600px;
 	}
 
-	@include desktop{
-
-	}
 }
 
 .quote{
@@ -324,5 +321,26 @@ p{
 	@include desktop{
 		width: 25vw;
 		height: 40vw;
+	}
+}
+
+.photo{
+	background: url(../img/jose-drawing.png) no-repeat;
+	background-size: contain;
+	width: 60vw;
+	height: 60vw;
+	margin: 0 auto;
+	margin-top: -550px;
+
+	@include tablet{
+		width: 50vw;
+		height: 50vw;
+	}
+
+	@include desktop{
+		width: 45vw;
+		height: 45vw;
+		margin-left: 5%;
+		margin-top: -750px;
 	}
 }

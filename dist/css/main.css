@@ -376,4 +376,29 @@ p {
 	}
 }
 
+.photo {
+	background: url(../img/jose-drawing.png) no-repeat;
+	background-size: contain;
+	width: 60vw;
+	height: 60vw;
+	margin: 0 auto;
+	margin-top: -550px;
+}
+
+@media only screen and (min-width: 768px) {
+	.photo {
+		width: 50vw;
+		height: 50vw;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.photo {
+		width: 45vw;
+		height: 45vw;
+		margin-left: 5%;
+		margin-top: -750px;
+	}
+}
+
 /*# sourceMappingURL=main.css.map */
