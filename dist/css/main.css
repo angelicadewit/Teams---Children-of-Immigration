@@ -140,7 +140,7 @@ p {
 
 @media only screen and (min-width: 1024px) {
 	.third-scene {
-		width: 400px;
+		width: 600px;
 	}
 }
 
@@ -326,6 +326,39 @@ p {
 		width: 24vw;
 		height: 18vw;
 		margin: 0;
+	}
+}
+
+.sweatshirt {
+	background: url(../img/sweatshirt.png) no-repeat;
+	background-size: contain;
+	width: 50vw;
+	height: 70vw;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+	.sweatshirt {
+		width: 30vw;
+		height: 30vw;
+		margin-top: -350px;
+	}
+}
+
+.sweatpants {
+	background: url(../img/sweatpants.png) no-repeat;
+	background-size: contain;
+	width: 50vw;
+	height: 70vw;
+	margin: 0 auto;
+	margin-top: -550px;
+}
+
+@media only screen and (min-width: 768px) {
+	.sweatpants {
+		width: 30vw;
+		height: 30vw;
+		margin-top: -350px;
 	}
 }
 

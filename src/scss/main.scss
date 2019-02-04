@@ -113,7 +113,7 @@ p{
 	margin: 0 auto;
 
 	@include desktop{
-		width: 400px;
+		width:  600px;
 	}
 }
 
@@ -288,4 +288,31 @@ p{
 	}
 }
 
+.sweatshirt{
+	background: url(../img/sweatshirt.png) no-repeat;
+	background-size: contain;
+	width: 50vw;
+	height: 70vw;
+	margin: 0 auto;
 
+	@include tablet{
+		width: 30vw;
+		height: 30vw;
+		margin-top: -350px;
+	}
+}
+
+.sweatpants{
+	background: url(../img/sweatpants.png) no-repeat;
+	background-size: contain;
+	width: 50vw;
+	height: 70vw;
+	margin: 0 auto;
+	margin-top: -550px;
+
+	@include tablet{
+		width: 30vw;
+		height: 30vw;
+		margin-top: -350px;
+	}
+}
