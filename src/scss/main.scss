@@ -369,6 +369,11 @@ p{
 	width: 30vw;
 	height: 30vw;
 
+	@include desktop{
+		width: 10vw;
+		height: 10vw;
+	}
+
 
 	&.circle{
 		background: url("../img/circle.png") no-repeat;
@@ -381,7 +386,8 @@ p{
 		}
 
 		@include desktop{
-			margin-top: -300px;
+			margin-left: 45%;
+			margin-top: -100px;
 		}
 	}
 
@@ -397,7 +403,8 @@ p{
 		}
 
 		@include desktop{
-			margin-top: -300px;
+			margin-left: 50%;
+			margin-top: -100px;
 		}
 	}
 
@@ -409,6 +416,13 @@ p{
 
 		@include tablet{
 			margin-top: -300px;
+		}
+
+		@include desktop{
+			width: 12vw;
+			height: 18vw;
+			margin-left: 80%;
+    		margin-top: -170px;
 		}
 	}
 
@@ -422,6 +436,12 @@ p{
 			margin-top: -300px;
 			margin-left: 45%;
 		}
+
+		@include desktop{
+			margin-left: 70%;
+			margin-top: -100px;
+		}
+
 	}
 
 	&.triangle{
@@ -435,7 +455,8 @@ p{
 		}
 		
 		@include desktop{
-			margin-top: -300px;
+			margin-top: -100px;
+			margin-left: 60%;
 		}
 	}
 
@@ -449,7 +470,7 @@ p{
 		}
 
 		@include desktop{
-			margin-top: -300px;
+			margin-top: -100px;
 		}
 	}
 
@@ -459,7 +480,12 @@ p{
 		margin-top: -150px;
 
 		@include tablet{
-			margin-top: -300px;
+			margin-top: -250px;
+		}
+
+		@include desktop{
+			margin-top: -100px;
+			margin-left: 80%;
 		}
 	}
 }

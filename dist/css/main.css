@@ -422,6 +422,13 @@ p {
 	height: 30vw;
 }
 
+@media only screen and (min-width: 1024px) {
+	.sixth-scene {
+		width: 10vw;
+		height: 10vw;
+	}
+}
+
 .sixth-scene.circle {
 	background: url("../img/circle.png") no-repeat;
 	background-size: contain;
@@ -437,7 +444,8 @@ p {
 
 @media only screen and (min-width: 1024px) {
 	.sixth-scene.circle {
-		margin-top: -300px;
+		margin-left: 45%;
+		margin-top: -100px;
 	}
 }
 
@@ -457,7 +465,8 @@ p {
 
 @media only screen and (min-width: 1024px) {
 	.sixth-scene.division {
-		margin-top: -300px;
+		margin-left: 50%;
+		margin-top: -100px;
 	}
 }
 
@@ -474,6 +483,15 @@ p {
 	}
 }
 
+@media only screen and (min-width: 1024px) {
+	.sixth-scene.minus {
+		width: 12vw;
+		height: 18vw;
+		margin-left: 80%;
+		margin-top: -170px;
+	}
+}
+
 .sixth-scene.rectangle {
 	background: url(../img/rectangle.png) no-repeat;
 	background-size: contain;
@@ -485,6 +503,13 @@ p {
 	.sixth-scene.rectangle {
 		margin-top: -300px;
 		margin-left: 45%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.sixth-scene.rectangle {
+		margin-left: 70%;
+		margin-top: -100px;
 	}
 }
 
@@ -503,7 +528,8 @@ p {
 
 @media only screen and (min-width: 1024px) {
 	.sixth-scene.triangle {
-		margin-top: -300px;
+		margin-top: -100px;
+		margin-left: 60%;
 	}
 }
 
@@ -521,7 +547,7 @@ p {
 
 @media only screen and (min-width: 1024px) {
 	.sixth-scene.x {
-		margin-top: -300px;
+		margin-top: -100px;
 	}
 }
 
@@ -533,7 +559,14 @@ p {
 
 @media only screen and (min-width: 768px) {
 	.sixth-scene.plus {
-		margin-top: -300px;
+		margin-top: -250px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.sixth-scene.plus {
+		margin-top: -100px;
+		margin-left: 80%;
 	}
 }
 
