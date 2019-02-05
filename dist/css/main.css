@@ -152,6 +152,14 @@ p {
 	}
 }
 
+@media only screen and (min-width: 1024px) {
+	.seventh-scene {
+		width: 50%;
+		margin: 0 auto;
+		max-width: 600px;
+	}
+}
+
 .empty {
 	height: 300px;
 }
@@ -574,6 +582,88 @@ p {
 
 .tears-cluster {
 	display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+	.tears-cluster {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 20%;
+		margin-top: -900px;
+	}
+}
+
+.tear {
+	width: 5vw;
+	height: 10vw;
+}
+
+.tear.tear-one {
+	background: url(../img/tear-1.png) no-repeat;
+	background-size: contain;
+	align-self: center;
+}
+
+.tear.tear-two {
+	background: url(../img/tear-2.png) no-repeat;
+	background-size: contain;
+	align-self: flex-end;
+}
+
+.tear.tear-three {
+	background: url(../img/tear-3.png) no-repeat;
+	background-size: contain;
+}
+
+.tear.tear-four {
+	background: url(../img/tear-4.png) no-repeat;
+	background-size: contain;
+	align-self: center;
+}
+
+.tear.tear-five {
+	background: url(../img/tear-5.png) no-repeat;
+	background-size: contain;
+	align-self: flex-end;
+}
+
+.tear.tear-six {
+	background: url(../img/tear-6.png) no-repeat;
+	background-size: contain;
+}
+
+.tear.tear-seven {
+	background: url(../img/tear-7.png) no-repeat;
+	background-size: contain;
+	align-self: center;
+}
+
+.tear.tear-eight {
+	background: url(../img/tear-8.png) no-repeat;
+	background-size: contain;
+}
+
+.tear.tear-nine {
+	background: url(../img/tear-9.png) no-repeat;
+	background-size: contain;
+	align-self: flex-end;
+}
+
+.tear.tear-ten {
+	background: url(../img/tear-10.png) no-repeat;
+	background-size: contain;
+	align-self: center;
+}
+
+.tear.tear-eleven {
+	background: url(../img/tear-11.png) no-repeat;
+	background-size: contain;
+}
+
+.total-tear-cluster {
+	display: flex;
+	justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */
