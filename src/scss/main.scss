@@ -121,7 +121,7 @@ p{
 .fifth-scene{
 	
 	@include desktop{
-		width: 500px;
+		width: 60%;
 		margin: 0px 10%;
 	}
 }
@@ -129,7 +129,7 @@ p{
 .seventh-scene{
 
 	@include desktop{
-		width: 50%;
+		width: 55%;
 		margin: 0 auto;
 		max-width: 600px;
 	}
