@@ -355,16 +355,6 @@ p{
 	}
 }
 
-.sixth-scene-cluster{
-
-	// @include tablet{
-		display: flex;
-		justify-content: space-around;
-		z-index: 2;
-		position: relative;
-	// }
-}
-
 .sixth-scene{
 	width: 30vw;
 	height: 30vw;
@@ -471,6 +461,7 @@ p{
 
 		@include desktop{
 			margin-top: -100px;
+			margin-left: 60%;
 		}
 	}
 
@@ -490,4 +481,15 @@ p{
 	}
 }
 
+.last-quote{
+	background: url(../img/mama-papa.png) no-repeat;
+	background-size: contain;
+	width: 98vw;
+    height: 25vw;
+	margin: 0 auto;
+}
+
+.tears-cluster{
+	display: none;
+}
 

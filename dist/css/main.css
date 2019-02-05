@@ -410,13 +410,6 @@ p {
 	}
 }
 
-.sixth-scene-cluster {
-	display: flex;
-	justify-content: space-around;
-	z-index: 2;
-	position: relative;
-}
-
 .sixth-scene {
 	width: 30vw;
 	height: 30vw;
@@ -548,6 +541,7 @@ p {
 @media only screen and (min-width: 1024px) {
 	.sixth-scene.x {
 		margin-top: -100px;
+		margin-left: 60%;
 	}
 }
 
@@ -568,6 +562,18 @@ p {
 		margin-top: -100px;
 		margin-left: 80%;
 	}
+}
+
+.last-quote {
+	background: url(../img/mama-papa.png) no-repeat;
+	background-size: contain;
+	width: 98vw;
+	height: 25vw;
+	margin: 0 auto;
+}
+
+.tears-cluster {
+	display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
