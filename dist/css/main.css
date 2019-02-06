@@ -176,6 +176,10 @@ p {
 	height: 450px;
 }
 
+.paragraph-gap {
+	margin-top: -50px;
+}
+
 .fifth-part {
 	margin-top: 50px;
 }
@@ -263,7 +267,7 @@ p {
 
 @media only screen and (min-width: 768px) {
 	.jose-new {
-		margin-left: 10%;
+		margin-left: 5%;
 		width: 40vw;
 		height: 42vw;
 		margin-top: -600px;
@@ -304,14 +308,14 @@ p {
 		left: 45vw;
 		width: 55vw;
 		height: 20vw;
-		margin-top: -240px;
+		margin-top: -300px;
 	}
 }
 
 .clocktower {
 	position: relative;
 	height: 0;
-	top: -350px;
+	top: -300px;
 }
 
 .clocktower .clock {
@@ -325,8 +329,9 @@ p {
 
 @media only screen and (min-width: 768px) {
 	.clocktower .clock {
-		width: 100vw;
-		height: 30vw;
+		width: 18vw;
+		height: 18vw;
+		margin-bottom: 20px;
 	}
 }
 
@@ -374,6 +379,10 @@ p {
 	height: 60vw;
 }
 
+.sweats .sweatpants:hover {
+	animation: ani-shake 2s;
+}
+
 @media only screen and (min-width: 768px) {
 	.sweats .sweatpants {
 		margin: 5%;
@@ -401,6 +410,25 @@ p {
 	}
 }
 
+.sweats .sweatshirt:hover {
+	animation: ani-shake 2s;
+}
+
+@keyframes ani-shake {
+	10%, 90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+	20%, 80% {
+		transform: translate3d(2px, 0, 0);
+	}
+	30%, 50%, 70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+	40%, 60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
 .photo {
 	background: url(../img/jose-drawing.png) no-repeat;
 	background-size: contain;
@@ -419,9 +447,9 @@ p {
 
 @media only screen and (min-width: 1024px) {
 	.photo {
-		width: 45vw;
-		height: 45vw;
-		margin-left: 5%;
+		width: 30vw;
+		height: 30vw;
+		margin-left: 15%;
 		position: relative;
 		top: -50px;
 	}
@@ -578,6 +606,12 @@ p {
 	.sixth-scene.plus {
 		margin-top: -100px;
 		margin-left: 80%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.fifth-scene {
+		width: 500px;
 	}
 }
 

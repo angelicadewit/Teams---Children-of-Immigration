@@ -98,18 +98,18 @@ TweenMax.set(".quote", {
 });
 
 new Waypoint({
-	element: document.querySelector('.quote'),
+	element: document.querySelector('#desktop-trigger'),
 	offset: "50%",
 	handler: function handler(direction) {
 		if (direction === "down") {
-			console.log('TRIGGERED');
-			TweenMax.to(".quote", .3, {
+			console.log('TRIGGERED quote');
+			TweenMax.to(".waypoint-quote", .3, {
 				y: 0,
 				opacity: 1
 			});
 		} else if (direction === "up") {
 			console.log('QQ');
-			TweenMax.to(".quote", .3, {
+			TweenMax.to(".waypoint-quote", .3, {
 				y: -50,
 				opacity: 0
 			});
@@ -217,14 +217,14 @@ new Waypoint({
 	handler: function handler(direction) {
 		if (direction === "down") {
 			console.log('TRIGGERED');
-			TweenMax.to(".sweatpants", .5, {
+			TweenMax.to(".sweatpants", .8, {
 				x: 0,
 				scale: 1,
 				opacity: 1
 			});
 		} else if (direction === "up") {
 			console.log('QQ');
-			TweenMax.to(".sweatpants", .5, {
+			TweenMax.to(".sweatpants", .8, {
 				x: -5,
 				scale: 0,
 				opacity: 0

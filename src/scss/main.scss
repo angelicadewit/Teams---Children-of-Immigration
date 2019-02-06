@@ -147,6 +147,10 @@ p{
 	height: 450px;
 }
 
+.paragraph-gap{
+	margin-top: -50px;
+}
+
 .fifth-part{
 	margin-top: 50px;
 }
@@ -223,7 +227,7 @@ p{
 	margin-left: 15%;
 	
 	@include tablet{
-		margin-left: 10%;
+		margin-left: 5%;
 		width: 40vw;
 		height: 42vw;
 		margin-top: -600px;
@@ -262,7 +266,7 @@ p{
 			left: 45vw;
 			width: 55vw;
 			height: 20vw;
-			margin-top: -240px;
+			margin-top: -300px;
 		}
 	}
 
@@ -271,7 +275,7 @@ p{
 .clocktower {
 	position: relative;
 	height: 0;
-	top: -350px;
+	top: -300px;
 	
 	.clock{
 		background: url(../img/clock.png) no-repeat;
@@ -283,9 +287,9 @@ p{
 		// margin-top: -250px;
 
 		@include tablet{
-			width: 100vw;
-			height: 30vw;
-			// margin-bottom: 100px;
+			width: 18vw;
+			height: 18vw;
+			margin-bottom: 20px;
 		}
 	}
 }
@@ -327,6 +331,11 @@ p{
 		background-size: contain;
 		width: 45vw;
 		height: 60vw;
+
+
+		&:hover{
+			animation: ani-shake 2s;
+		}
 	
 		@include tablet{
 			margin: 5%;
@@ -353,6 +362,28 @@ p{
 			height: 30vw;
 			// margin-left: 66%;
 		}
+
+		&:hover{
+			animation: ani-shake 2s;
+		}
+	}
+}
+
+@keyframes ani-shake {
+	10%, 90% {
+	transform: translate3d(-1px, 0, 0);
+	}
+
+	20%, 80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%, 50%, 70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%, 60% {
+		transform: translate3d(4px, 0, 0);
 	}
 }
 
@@ -370,9 +401,9 @@ p{
 	}
 
 	@include desktop{
-		width: 45vw;
-		height: 45vw;
-		margin-left: 5%;
+		width: 30vw;
+		height: 30vw;
+		margin-left: 15%;
 		// margin-top: -750px;
 		// height: 0;
 		position: relative;
@@ -503,6 +534,12 @@ p{
 			margin-top: -100px;
 			margin-left: 80%;
 		}
+	}
+}
+
+.fifth-scene{
+	@include desktop{
+		width: 500px;
 	}
 }
 
