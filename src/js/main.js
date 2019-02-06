@@ -302,7 +302,7 @@ var spotsAll = document.querySelectorAll(".sixth-scene");
 
 spotsAll.forEach(function(spot){
     TweenMax.set(".photo", {
-        x:5,
+        x:-500,
         opacity: 0
     });
 }
