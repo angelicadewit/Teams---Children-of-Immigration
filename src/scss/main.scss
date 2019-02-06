@@ -136,14 +136,16 @@ p{
 }
 
 .empty{
-	height: 300px;
-
-	&.empty-show {
-		border: 1px solid red;
-	}
+	height: 200px;
 }
 
+.one-empty{
+	height: 400px;
+}
 
+.fifth-part{
+	margin-top: 50px;
+}
 .airplane-stuff{
 	position: relative;
 	display: flex;
@@ -262,84 +264,91 @@ p{
 
 }
 
-.clock{
-	background: url(../img/clock.png) no-repeat;
-	background-size: contain;
-	width: 50vw;
-	height: 50vw;
-	margin: 0 auto;
-	margin-top: -250px;
+.clocktower {
+	position: relative;
+	height: 0;
+	top: -350px;
+	
+	.clock{
+		background: url(../img/clock.png) no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: 50vw;
+		height: 50vw;
+		margin: 0 auto;
+		// margin-top: -250px;
 
-	@include tablet{
-		width: 30vw;
-		height: 30vw;
-		margin-top: -350px;
+		@include tablet{
+			width: 100vw;
+			height: 30vw;
+			// margin-bottom: 100px;
+		}
 	}
 }
 
 .chairs{
-	margin-top: -220px;
+	position: relative;
+	height: 0;
+	top: -250px;
 
-	@include tablet{
-		margin-top: -250px;
-	}
 
 	@include desktop{
 		display: flex;
 		justify-content: space-between;
 	}
-}
-
-.chair{
-	background: url(../img/airport-chairs.png) no-repeat;
-	background-size: contain;
-	width: 50vw;
-	height: 30vw;
-	margin: 0 auto;
-	
-	@include desktop{
-		width: 24vw;
-		height: 18vw;
-		margin: 0;
-	}
-}
-
-.sweatshirt{
-	background: url(../img/sweatshirt.png) no-repeat;
-	background-size: contain;
-	width: 50vw;
-	height: 50vw;
-	margin: 0 auto;
-
-	@include tablet{
-		margin: 50%;
-		margin-top: -350px;
-	}
-
-	@include desktop{
-		width: 30vw;
+	.chair{
+		background: url(../img/airport-chairs.png) no-repeat;
+		background-size: contain;
+		width: 50vw;
 		height: 30vw;
-		margin-left: 66%;
-		margin-top: -650px;
+		margin: 0 auto;
+		
+		@include desktop{
+			width: 24vw;
+			height: 18vw;
+			margin: 0;
+		}
 	}
 }
 
-.sweatpants{
-	background: url(../img/sweatpants.png) no-repeat;
-	background-size: contain;
-	width: 45vw;
-	height: 60vw;
-	margin: 0 auto;
-	margin-top: -550px;
+.sweats {
+	height: 0;
+	position: relative;
+	top: -300px;
+	display: flex;
+    justify-content: space-between;
 
-	@include tablet{
-		margin: 5%;
-		margin-top: -400px;
+	.sweatpants{
+		background: url(../img/sweatpants.png) no-repeat;
+		background-size: contain;
+		width: 45vw;
+		height: 60vw;
+	
+		@include tablet{
+			margin: 5%;
+		}
+	
+		@include desktop{
+			width: 25vw;
+			height: 40vw;
+		}
 	}
 
-	@include desktop{
-		width: 25vw;
-		height: 40vw;
+	.sweatshirt{
+		background: url(../img/sweatshirt.png) no-repeat;
+		background-size: contain;
+		width: 50vw;
+		height: 50vw;
+	
+		@include tablet{
+			// margin: 50%;
+		}
+	
+		@include desktop{
+			width: 30vw;
+			height: 30vw;
+			// margin-left: 66%;
+		}
 	}
 }
 
@@ -360,7 +369,10 @@ p{
 		width: 45vw;
 		height: 45vw;
 		margin-left: 5%;
-		margin-top: -750px;
+		// margin-top: -750px;
+		// height: 0;
+		position: relative;
+		top: -50px;
 	}
 }
 

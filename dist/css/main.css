@@ -67,6 +67,10 @@ table {
 	border-spacing: 0;
 }
 
+.cf {
+	clear: both;
+}
+
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;
@@ -161,11 +165,15 @@ p {
 }
 
 .empty {
-	height: 300px;
+	height: 200px;
 }
 
-.empty.empty-show {
-	border: 1px solid red;
+.one-empty {
+	height: 400px;
+}
+
+.fifth-part {
+	margin-top: 50px;
 }
 
 .airplane-stuff {
@@ -296,31 +304,32 @@ p {
 	}
 }
 
-.clock {
+.clocktower {
+	position: relative;
+	height: 0;
+	top: -350px;
+}
+
+.clocktower .clock {
 	background: url(../img/clock.png) no-repeat;
 	background-size: contain;
+	background-position: center;
 	width: 50vw;
 	height: 50vw;
 	margin: 0 auto;
-	margin-top: -250px;
 }
 
 @media only screen and (min-width: 768px) {
-	.clock {
-		width: 30vw;
+	.clocktower .clock {
+		width: 100vw;
 		height: 30vw;
-		margin-top: -350px;
 	}
 }
 
 .chairs {
-	margin-top: -220px;
-}
-
-@media only screen and (min-width: 768px) {
-	.chairs {
-		margin-top: -250px;
-	}
+	position: relative;
+	height: 0;
+	top: -250px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -330,7 +339,7 @@ p {
 	}
 }
 
-.chair {
+.chairs .chair {
 	background: url(../img/airport-chairs.png) no-repeat;
 	background-size: contain;
 	width: 50vw;
@@ -339,57 +348,52 @@ p {
 }
 
 @media only screen and (min-width: 1024px) {
-	.chair {
+	.chairs .chair {
 		width: 24vw;
 		height: 18vw;
 		margin: 0;
 	}
 }
 
-.sweatshirt {
-	background: url(../img/sweatshirt.png) no-repeat;
-	background-size: contain;
-	width: 50vw;
-	height: 50vw;
-	margin: 0 auto;
+.sweats {
+	height: 0;
+	position: relative;
+	top: -300px;
+	display: flex;
+	justify-content: space-between;
 }
 
-@media only screen and (min-width: 768px) {
-	.sweatshirt {
-		margin: 50%;
-		margin-top: -350px;
-	}
-}
-
-@media only screen and (min-width: 1024px) {
-	.sweatshirt {
-		width: 30vw;
-		height: 30vw;
-		margin-left: 66%;
-		margin-top: -650px;
-	}
-}
-
-.sweatpants {
+.sweats .sweatpants {
 	background: url(../img/sweatpants.png) no-repeat;
 	background-size: contain;
 	width: 45vw;
 	height: 60vw;
-	margin: 0 auto;
-	margin-top: -550px;
 }
 
 @media only screen and (min-width: 768px) {
-	.sweatpants {
+	.sweats .sweatpants {
 		margin: 5%;
-		margin-top: -400px;
 	}
 }
 
 @media only screen and (min-width: 1024px) {
-	.sweatpants {
+	.sweats .sweatpants {
 		width: 25vw;
 		height: 40vw;
+	}
+}
+
+.sweats .sweatshirt {
+	background: url(../img/sweatshirt.png) no-repeat;
+	background-size: contain;
+	width: 50vw;
+	height: 50vw;
+}
+
+@media only screen and (min-width: 1024px) {
+	.sweats .sweatshirt {
+		width: 30vw;
+		height: 30vw;
 	}
 }
 
@@ -414,7 +418,8 @@ p {
 		width: 45vw;
 		height: 45vw;
 		margin-left: 5%;
-		margin-top: -750px;
+		position: relative;
+		top: -50px;
 	}
 }
 
