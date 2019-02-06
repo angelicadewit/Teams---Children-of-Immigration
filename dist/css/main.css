@@ -464,6 +464,7 @@ p {
 	.sixth-scene {
 		width: 10vw;
 		height: 10vw;
+		opacity: 0;
 	}
 }
 
