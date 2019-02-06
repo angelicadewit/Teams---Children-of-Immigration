@@ -293,7 +293,7 @@ new Waypoint({
 var spotsAll = document.querySelectorAll(".sixth-scene");
 
 new Waypoint({
-	element: document.querySelector('#photo-trigger'),
+	element: document.querySelector('.fifth-part'),
 	offset: "50%",
 	handler: function handler(direction) {
 		if (direction === "down") {
@@ -307,10 +307,10 @@ new Waypoint({
 						}
 					}
 				});
-				//return the timeline
 				return child;
 			};
 
+			console.log('spots');
 			var tl = new TimelineMax();
 			tl.set(spotsAll, { autoAlpha: 0 }).add(spotsIn());
 		} else if (direction === "up") {

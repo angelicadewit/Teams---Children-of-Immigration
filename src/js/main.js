@@ -300,13 +300,21 @@ new Waypoint({
 
 var spotsAll = document.querySelectorAll(".sixth-scene");
 
+spotsAll.forEach(function(spot){
+    TweenMax.set(".photo", {
+        x:5,
+        opacity: 0
+    });
+}
+
 
 
 new Waypoint({
-    element: document.querySelector('#photo-trigger'),
+    element: document.querySelector('.fifth-part'),
     offset: "50%",
     handler: function(direction) {
         if (direction === "down") {
+            console.log(`spots`)
             var tl = new TimelineMax(); 
             tl
                 .set(spotsAll, {autoAlpha:0})
@@ -316,13 +324,12 @@ new Waypoint({
 
                 var child = new TimelineLite();
                     child.staggerTo(spotsAll, 0.5, {autoAlpha:1, ease: Back.easeOut.config(1.8), 
-                            cycle:{
-                            delay:function() {
-                                return Math.random() * 1;
+                        cycle:{
+                        delay:function() {
+                            return Math.random() * 1;
                             }
-                            }
+                        }
                     });	
-                //return the timeline
                 return child;
                 }
         } else if (direction === "up"){
