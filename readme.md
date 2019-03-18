@@ -1,6 +1,6 @@
-# Fire and Ice Tours
+# José: A Child of Immigration
 
-A responsive site designed by [Carey Gordon](https://www.kdharpdesign.com) as a brand extension to bring awareness to the 2018 immigration story.
+A responsive site designed by [Carey Gordon](https://careygordon.com) as a brand extension to bring awareness to the 2018 immigration story.
 
 ## Built With
 
