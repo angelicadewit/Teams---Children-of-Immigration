@@ -153,6 +153,7 @@ p{
 
 .fifth-part{
 	margin-top: 50px;
+	position: relative;
 }
 .airplane-stuff{
 	position: relative;
@@ -287,6 +288,10 @@ p{
 		// margin-top: -250px;
 
 		@include tablet{
+			margin-bottom: 20px;
+		}
+
+		@include desktop{
 			width: 18vw;
 			height: 18vw;
 			margin-bottom: 20px;
@@ -324,7 +329,7 @@ p{
 	position: relative;
 	top: -300px;
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
 
 	.sweatpants{
 		background: url(../img/sweatpants.png) no-repeat;
@@ -414,79 +419,58 @@ p{
 .sixth-scene{
 	width: 30vw;
 	height: 30vw;
+	position: absolute;
 
 	@include desktop{
 		width: 10vw;
 		height: 10vw;
-		opacity: 1;
+		opacity: 0;
 	}
-
 
 	&.circle{
 		background: url("../img/circle.png") no-repeat;
 		background-size: contain;
-		margin-left: 20%;
-		margin-top: -150px;
-
-		@include tablet{
-			margin-top: -250px;
-		}
+		top: 6%;
+		left: 5%;
 
 		@include desktop{
-			margin-left: 45%;
-			margin-top: -100px;
+			left: 59%;
 		}
 	}
 
 	&.division{
 		background: url(../img/division.png) no-repeat;
 		background-size: contain;
-		margin: 0 auto;
-		margin-top: -100px;
+		top: 15%;
+		left: 68%;
 
-		@include tablet{
-			margin-top: -250px;
-			margin-left: 25%;
-		}
 
 		@include desktop{
-			margin-left: 50%;
-			margin-top: -100px;
+			left: 73%;
 		}
 	}
 
 	&.minus{
 		background: url(../img/minus.png) no-repeat;
 		background-size: contain;
-		margin-left: 60%;
-		margin-top: -150px;
-
-		@include tablet{
-			margin-top: -300px;
-		}
+		top: 30%;
+		left: 18%;
 
 		@include desktop{
 			width: 12vw;
 			height: 18vw;
-			margin-left: 88%;
-			margin-top: -170px;
+			left: 80%;
 		}
 	}
 
 	&.rectangle{
 		background: url(../img/rectangle.png) no-repeat;
 		background-size: contain;
-		margin-left: 30%;
-		margin-top: -150px;
-
-		@include tablet{
-			margin-top: -300px;
-			margin-left: 45%;
-		}
+		top: 43%;
+		left: 58%;
 
 		@include desktop{
-			margin-left: 70%;
-			margin-top: -100px;
+			left: 55%;
 		}
 
 	}
@@ -494,46 +478,45 @@ p{
 	&.triangle{
 		background: url(../img/triangle.png) no-repeat;
 		background-size: contain;
-		margin: 0 auto;
-		margin-top: -150px;
+		top: 55%;
+		left: 7%;
 
-		@include tablet{
-			margin-top: -250px;
-		}
-		
+
 		@include desktop{
-			margin-top: -100px;
-			margin-left: 60%;
+			top: 45%;
+			left: 69%;
 		}
 	}
 
 	&.x{
 		background: url(../img/x.png) no-repeat;
 		background-size: contain;
-		margin-top: -150px;
+		top: 69%;
+		left: 30%;
 
 		@include tablet{
-			margin-top: -250px;
+			top: 45%;
 		}
 
 		@include desktop{
-			margin-top: -100px;
-			margin-left: 60%;
+			top: 69%;
+			left: 86%;
 		}
 	}
 
 	&.plus{
 		background: url(../img/plus.png) no-repeat;
 		background-size: contain;
-		margin-top: -150px;
+		top: 80%;
+		left: 62%;
 
 		@include tablet{
-			margin-top: -250px;
+			top: 60%;
 		}
 
 		@include desktop{
-			margin-top: -100px;
-			margin-left: 80%;
+			top: 80%;
+			left: 56%;
 		}
 	}
 }
@@ -548,7 +531,7 @@ p{
 	background: url(../img/mama-papa.png) no-repeat;
 	background-size: contain;
 	width: 98vw;
-    height: 25vw;
+	height: 25vw;
 	margin: 0 auto;
 }
 

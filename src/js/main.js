@@ -24,7 +24,7 @@ new Waypoint({
             TweenMax.to(".michigan", 1, {opacity: 1, delay: 4});
         } else if (direction === "up"){
             console.log(`QQ`)
-            TweenMax.to(".airplane", 5, {x:-1000});
+            TweenMax.to(".airplane", 2, {opacity: 0});
             TweenMax.to(".airplane-dust", 2, {opacity: 0});
             TweenMax.to(".michigan", 1, {opacity: 0});
         }
@@ -300,47 +300,48 @@ new Waypoint({
 
 var spotsAll = document.querySelectorAll(".sixth-scene");
 
-// spotsAll.forEach(function(spot){
-//     TweenMax.set(".photo", {
-//         x:-100,
-//         opacity: 0
-//     });
-// })
+spotsAll.forEach(function(spot){
+    TweenMax.set(".pre-fifth", {
+        x:-500,
+        opacity: 0
+    });
+})
 
 
 
-// new Waypoint({
-//     element: document.querySelector('.fifth-part'),
-//     offset: "50%",
-//     handler: function(direction) {
-//         if (direction === "down") {
-//             console.log(`spots`)
-//             var tl = new TimelineMax(); 
-//             tl
-//                 .set(spotsAll, {autoAlpha:0})
-//                 .add(spotsIn());
+new Waypoint({
+    element: document.querySelector('.fifth-part'),
+    offset: "120%",
+    handler: function(direction) {
+        if (direction === "down") {
+            console.log(`spots`)
+            var tl = new TimelineMax(); 
+            tl
+                .set(spotsAll, {autoAlpha:0})
+                .add(spotsIn());
 
-//             function spotsIn(){
+            function spotsIn(){
 
-//                 var child = new TimelineLite();
-//                     child.staggerTo(spotsAll, 0.5, {autoAlpha:1, ease: Back.easeOut.config(1.8), 
-//                         cycle:{
-//                         delay:function() {
-//                             return Math.random() * 1;
-//                             }
-//                         }
-//                     });	
-//                 return child;
-//                 }
-//         } else if (direction === "up"){
-//             console.log(`QQ`)
-//             TweenMax.to(".photo", .5, {
-//                 x: 5,
-//                 opacity: 0
-//             });
-//         }
-//     }
-// })
+                var child = new TimelineLite();
+                    child.staggerTo(spotsAll, 3, {autoAlpha:1, ease: Back.easeOut.config(1.8), 
+                        cycle:{
+                        delay:function() {
+                            return Math.random() * 4;
+                            }
+                        },
+                        repeat: -1,
+                    });	
+                return child;
+                }
+        } else if (direction === "up"){
+            console.log(`QQ`)
+            TweenMax.to(".photo", .5, {
+                x: 5,
+                opacity: 0
+            });
+        }
+    }
+})
 
 
 
@@ -350,7 +351,7 @@ var spotsAll = document.querySelectorAll(".sixth-scene");
 // tear drops
 
 TweenMax.set('.total-tear-cluster .tear', {
-    y: random(-100, -50),
+    y: random(-50, -25),
     opacity: 0
 })
 
@@ -364,15 +365,15 @@ tears.forEach(tear => {
     let tl = new TimelineMax({repeat: -1})
     tl.to({}, Math.random() * 7, {});
     tl.to(tear, 3, {
-        y: random(0, 200),
+        y: random(0, 20),
         ease: Linear.easeNone
     }, "start")
     console.log('animate tear', tear)
     tl.to(tear, 0.5, {
-        opacity: random(0.7,1)
+        alpha: random(0.7,1)
     }, "start")
     tl.to(tear, 0.5, {
-        opacity: 0
+        alpha: 0
     },"start+=2.5")
 })
 
